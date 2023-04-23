@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Build Application') {
             steps {
-                sh 'mvn clean packages'
+                sh 'mvn clean package'
             }
             post {
                 success {
